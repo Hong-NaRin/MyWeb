@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-    
 <%@ include file="../include/header.jsp" %>
     
 <section>
@@ -53,10 +52,7 @@
 			<input type="submit" value="가입">
 			<input type="button" value="로그인" onclick="location.href='login.user';">
 		</form>
-		
 	</div>
-
 </section>
-    
     
 <%@ include file="../include/footer.jsp" %>

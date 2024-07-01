@@ -4,7 +4,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-idth, initial-scale=1">
@@ -37,7 +36,6 @@
 	}
 	</style>
 </head>
-
 <body>
 	<!-- header -->
 	<div class="brand">My Web</div>        
@@ -56,10 +54,8 @@
                 <a class="navbar-brand" href="/hong">My First Web</a>
             </div>
            
-           
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                	
                     <li>
                         <a href="${pageContext.request.contextPath }/index.jsp">HOME</a>
                     </li>
@@ -67,9 +63,8 @@
                         <a href="${pageContext.request.contextPath }/member/member.jsp">Member</a>
                     </li>
                     <li>
-                        <a href="${pageContext.request.contextPath }">BOARD</a>
+                        <a href="${pageContext.request.contextPath }/board/list.board">BOARD</a>
                     </li>
-                    
                     
                     <c:choose>
                    	<c:when test="${sessionScope.user_id == null }">
@@ -89,14 +84,9 @@
 	                    </li>
                     </c:otherwise>
                     </c:choose>
-                
-                
                 </ul>
             </div>
-        
-        
-        		
-				            
+                    
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->

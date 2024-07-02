@@ -44,7 +44,8 @@ public class BoardDAO {
 	public void regist(String writer,
 					   String title,
 					   String content) {
-		String sql = "INSERT INTO BOARD(BNO, WRITER, TITLE, CONTENT) VALUES (BOARD_SEQ.NEXTVAL, ?, ?, ?)";
+		String sql = "INSERT INTO BOARD(BNO, WRITER, TITLE, CONTENT) VALUES (BOARD_SEQ.NEXTVAL, ?, ?, ?)"; // SEQ.NEXTVAL -> 시퀀스 번호 추출
+		
 		
 		Connection conn = null;
 		PreparedStatement pstmt = null;
@@ -112,4 +113,3 @@ public class BoardDAO {
 		return list;
 	}
 }
-	

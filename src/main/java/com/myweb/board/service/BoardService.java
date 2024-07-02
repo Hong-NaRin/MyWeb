@@ -12,4 +12,16 @@ public interface BoardService {
 	
 	// 목록조회
 	void getList(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException;
+
+	// 글 상세 내용
+	void getContent(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException;
+	
+	// 글 수정 화면
+	void modify(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException;
+	
+	// 글 수정
+	void update(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException;
+	
+	// 글 삭제
+	void delete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException;
 }

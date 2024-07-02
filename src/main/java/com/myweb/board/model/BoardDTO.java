@@ -9,7 +9,7 @@ public class BoardDTO {
 	private String writer;
 	private String title;
 	private String content;
-	private java.sql.Timestamp regdate;
+	private Timestamp regdate;
 	private int hit;
 	
 	// 생성자

@@ -45,7 +45,7 @@ public class UserDAO {
 		
 		Connection conn = null;
 		PreparedStatement pstmt = null;
-		ResultSet rs = null;
+		ResultSet rs = null; // sql에서 select문을 사용할 때 rs를 사용
 		
 		try {
 			conn = ds.getConnection(); // conn
@@ -81,7 +81,7 @@ public class UserDAO {
 			pstmt.setString(4, email);
 			pstmt.setString(5, gender);
 			
-			pstmt.executeUpdate(); // i, u, d구문은 executeUpdate() 
+			pstmt.executeUpdate(); // insert, update, delete구문은 executeUpdate() 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

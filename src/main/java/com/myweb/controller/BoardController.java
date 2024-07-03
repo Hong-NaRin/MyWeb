@@ -52,13 +52,13 @@ public class BoardController extends HttpServlet {
 			service.getList(request, response);
 		}
 		else if(command.equals("/board/write.board")) { // 글 작성화면
-			HttpSession session = request.getSession();
-			String user_id = (String)session.getAttribute("user_id");
-			
-			if(user_id == null) { // 로그인을 하지 않으면 글 작성하지 못하게 홈화면으로 돌아감
-				response.sendRedirect("/MyWeb/index.jsp");
-				return;
-			}
+//			HttpSession session = request.getSession();
+//			String user_id = (String)session.getAttribute("user_id");
+//			
+//			if(user_id == null) { // 로그인을 하지 않으면 글 작성하지 못하게 홈화면으로 돌아감
+//				response.sendRedirect("/MyWeb/index.jsp");
+//				return;
+//			}
 			request.getRequestDispatcher("board_write.jsp").forward(request, response);
 		}
 		else if(command.equals("/board/registForm.board")) { // 글 등록	
